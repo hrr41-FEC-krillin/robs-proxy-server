@@ -9,10 +9,14 @@
     "nodemon": "^1.19.4",
     "path": "^0.12.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon public/server.js"
+    "start": "nodemon public/server.js",
+    "build": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
